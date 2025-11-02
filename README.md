@@ -1,23 +1,17 @@
 # WP Accessibility Controls
 
-Un plugin WordPress pour améliorer l'accessibilité de votre site web en permettant aux visiteurs de personnaliser les paramètres d'affichage.
+Un plugin WordPress pour améliorer l'accessibilité de votre site web en permettant aux visiteurs de personnaliser les paramètres d'affichage en temps réel.
 
 ## 🎯 Fonctionnalités
 
 Le plugin ajoute un panneau de contrôle d'accessibilité avec les options suivantes :
 
-- **Taille du texte** : 5 niveaux (Petit, Normal, Grand, Très grand, Énorme)
-- **Police de caractères** : 
-  - Par défaut
-  - Arial
-  - Verdana
-  - Times New Roman
-  - Comic Sans MS
-  - OpenDyslexic (pour les personnes dyslexiques)
-- **Hauteur de ligne** : 3 niveaux (Serré, Normal, Relâché)
-- **Espacement des lettres** : 4 niveaux (Serré, Normal, Large, Très large)
-- **Contraste** : 4 modes (Faible, Normal, Élevé, Inversé)
-- **Alignement du texte** : 4 options (Gauche, Centre, Droite, Justifié)
+- **🔤 Mode Dyslexie** : Toggle ON/OFF pour activer la police Lexend (optimisée pour la dyslexie)
+- **📏 Taille du texte** : Slider ajustable de 16px à 70px
+- **📏 Hauteur de ligne** : 3 niveaux (Serré, Normal, Relâché)
+- **🔤 Espacement des lettres** : 4 niveaux (Serré, Normal, Large, Très large)
+- **🎨 Contraste** : 4 modes (Faible, Normal, Élevé, Inversé)
+- **📝 Alignement du texte** : 4 options (Gauche, Centre, Droite, Justifié)
 
 ## 🔧 Installation
 
@@ -47,13 +41,9 @@ Une fois activé, le plugin affiche automatiquement un bouton flottant en bas à
 - **Tous les utilisateurs** : Les paramètres sont sauvegardés dans le localStorage du navigateur (valable indéfiniment)
 - **Application immédiate** : Tous les changements sont appliqués en temps réel sans rechargement de page
 
-### Police OpenDyslexic
+### Police Lexend pour la Dyslexie
 
-Le plugin inclut la police **OpenDyslexic** pour les personnes dyslexiques. Elle est chargée automatiquement depuis le CDN jsDelivr. Si vous préférez l'héberger localement :
-
-1. Téléchargez OpenDyslexic depuis [opendyslexic.org](https://opendyslexic.org/)
-2. Placez les fichiers `.woff2` ou `.ttf` dans le dossier `assets/fonts/` du plugin
-3. Modifiez le fichier `assets/css/style.css` pour pointer vers vos fichiers locaux
+Le plugin utilise la police **Lexend** de Google Fonts, spécialement conçue pour améliorer la lisibilité des personnes dyslexiques. Elle est chargée automatiquement depuis Google Fonts CDN et ne nécessite aucune configuration supplémentaire.
 
 ## 🎨 Personnalisation
 
@@ -71,6 +61,12 @@ Vous pouvez personnaliser les styles du plugin en surchargeant les classes CSS s
 
 /* Contrôles */
 .wpac-control-group { }
+
+/* Toggle Dyslexie */
+.wpac-toggle-group { }
+
+/* Slider */
+.wpac-slider-wrapper { }
 ```
 
 ## 📱 Responsive
