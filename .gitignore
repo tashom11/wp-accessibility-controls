@@ -1,0 +1,34 @@
+# WordPress
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (si ajoutés plus tard)
+node_modules/
+package-lock.json
+
+# Build files
+*.zip
+*.tar.gz
+
+# Debug
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Temporary files
+*.tmp
+
