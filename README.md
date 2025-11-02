@@ -20,10 +20,10 @@ Le plugin ajoute un panneau de contrôle d'accessibilité avec les options suiva
    - Uploadez le dossier `wp-accessibility-controls` dans `/wp-content/plugins/`
    - Activez le plugin dans WordPress Admin → Extensions
 
-2. **Via wp-content/plugins** :
+2. **Via Git** :
    ```bash
    cd wp-content/plugins
-   git clone [url-du-repo] wp-accessibility-controls
+   git clone https://github.com/tashom11/wp-accessibility-controls.git
    ```
 
 ## 📖 Utilisation
